@@ -1,0 +1,4 @@
+ball 100 2 6
+doll 100 3 5
+lego 300 4 10
+puzzle 50 1 3
