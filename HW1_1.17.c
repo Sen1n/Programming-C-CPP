@@ -2,14 +2,16 @@
 #include <math.h>
 
 int main() {
-    long double x, x_8;
-   printf("enter a number within 1 to 10000:");
-   scanf("%Lf", &x);
-   if (x <= 10000 && x >= 0) {
-       x_8 = pow(x, 8);
-       printf("%20.4Le\n", x_8);
-   }
-   else {
-        printf("invalid input, enter a number within 1 to 10000");
-   }
+    double number, result;
+
+    printf("enter num from 0 to 10000: ");
+    scanf("%lf", &number);
+
+    if (number < 0 || number > 10000) {
+        return 1;
+    }
+
+    result = pow(number, 8);
+    printf("%.20g\n", result);
+    printf("%.4g\n", result);  
 }
